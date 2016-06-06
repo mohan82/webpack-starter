@@ -21,6 +21,9 @@ var config = {
                 query: {
                     presets: ['es2015']
                 }
+            },, {
+                test: /\.scss$/,
+                loader: 'style!css!postcss!sass'
             },{
                 test: /index.html$/,
                 loader: "file?name=[name].[ext]",
