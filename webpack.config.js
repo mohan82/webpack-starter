@@ -10,7 +10,6 @@ var config = {
     output:{
         path:assetsDir,
         filename:'bundle.js',
-        publicPath:'/public/assets/'
     },
     module: {
         loaders: [
