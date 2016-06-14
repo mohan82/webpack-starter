@@ -1,7 +1,7 @@
 var WebPackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config')
 var webpack = require('webpack')
-var port = 9000;
+var port = process.env.PORT ||9000;
 
 function appendDevServerConfig(config) {
     config.output.publicPath = '/public/assets/'
